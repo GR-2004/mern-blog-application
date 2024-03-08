@@ -1,10 +1,18 @@
-import express from 'express'
+import express from "express";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
 
-const app = express()
+dotenv.config();
 
+mongoose
+  .connect(process.env.MONGO)
+  .then(() => console.log("mongoodb is connected"))
+  .catch((err) => console.log(err));
+
+const app = express();
 
 app.listen(3000, () => {
-    console.log('server is running on port 3000')
-})
+  console.log("server is running on port 3000");
+});
 
-export default app
+export default app;
