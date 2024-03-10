@@ -7,6 +7,7 @@ import Signup from './pages/Signup.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import Projects from './pages/Projects.jsx'
 import Header from './components/Header.jsx'
+import FooterCom from './components/Footer.jsx'
 
 const App = () => {
   return (
@@ -20,9 +21,8 @@ const App = () => {
           <Route path='/sign-in' element={<Signin/>} />
           <Route path='/dashboard' element={<Dashboard/>} />
           <Route path='/projects' element={<Projects/>} />
-
-
         </Routes>
+        <FooterCom />
       </BrowserRouter>
     </div>
   )
