@@ -19,10 +19,8 @@ const Dashboard = () => {
         {/* side bar */}
         <DashSidebar />
       </div>
-      <div className=''>
         {/* profile... */}
         {tab === 'profile' && <DashProfile />}
-      </div>
     </div>
 
   )
