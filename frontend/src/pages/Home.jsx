@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-8">
-        <h1 className="text-3xl sm:text-5xl font-bold text-gray-800 mb-4">Welcome to my Blog</h1>
+        <h1 className="text-3xl sm:text-5xl font-bold text-gray-800 m-8">Welcome to my Blog</h1>
         <p className="text-sm sm:text-base text-gray-600 mb-8">
           Here you'll find a variety of articles and tutorials on topics such as web development, software engineering, and programming languages.
         </p>
@@ -39,7 +39,7 @@ const Home = () => {
         ))}
       </div>
       <div className="text-center mt-8">
-        <Link to="/search" className="text-lg text-teal-500 hover:underline">
+        <Link to="/search" className="text-sm text-teal-500 hover:underline">
           View all posts
         </Link>
       </div>
